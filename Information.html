@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Graduation Project</title>
+        <!-- MATERIAL CDN-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" 
+        rel="stylesheet">
+        <!--STYLESHEET-->
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body onload="time()">
+        <div class="container">
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <img src="./images/logo.png">
+                        <h2>Mobile Robot <span class="danger">Isolation area</span></h2>
+                    </div>
+
+                    <div class="close" id="close-btn">
+                        <span class="material-icons-sharp">close</span>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <a href="./index.html">
+                        <span class="material-icons-sharp">dashboard</span>
+                        <h3>Control</h3>
+                    </a>
+                    <a href="./Information.html"  class="active">
+                        <span class="material-icons-sharp">perm_device_information</span>
+                        <h3>Informations</h3>
+                    </a>
+                    <a href="./Setting.html">
+                        <span class="material-icons-sharp">settings</span>
+                        <h3>Settings</h3>
+                    </a>
+                    <a href="./LogOut.html">
+                        <span class="material-icons-sharp">logout</span>
+                        <h3>Log Out</h3>
+                    </a>
+                </div>
+            </aside>
+
+            <!---------------- END OF ASIDE ------------->
+
+            <main>
+                <h1>Information</h1>
+
+                <div id="clock"></div>
+
+                <div class="insights">
+                    <div class="sales">
+                        <span class="material-icons-sharp">account_circle</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h1>Nguyễn Hữu Dũng</h1>
+                                <h2>18146278</h2>
+                            </div>
+                            <div class="member-photo">
+                                <img src="./images/huudung.jpg">
+                            </div>
+                        </div>
+                        <h3 class="text-muted">Cơ Điện tử 181462B</h3>
+                    </div>
+                    <!---------- END OF SALEs ------------>
+                    <div class="expenses">
+                        <span class="material-icons-sharp">account_circle</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h1>Trần Kim Thiện</h1>
+                                <h2>18146377</h2>
+                            </div>
+                            <div class="member-photo">
+                                <img src="./images/Thien.jpg">
+                            </div>
+                        </div>
+                        <h3 class="text-muted">Cơ Điện tử 181462B</h3>
+                    </div>
+                            <!---------- END OF EXPENSES ------------>
+                    <div class="income">
+                        <span class="material-icons-sharp">account_circle</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h1>Mai Đại Nhiều</h1>
+                                <h2>18146353</h2>
+                            </div>
+                            <div class="member-photo">
+                                <img src="./images/Thien.jpg">
+                            </div>
+                        </div>
+                        <h3 class="text-muted">Cơ Điện tử 181462A</h3>
+                    </div>
+                   <!---------- END OF INCOMES ------------>
+                </div>
+                <!--------------END OF INSIGHTS------------>
+
+                <div class="robot-infor">
+                    <h2>Introduction</h2>
+                    <div class="infor">
+                        <div class="profile-photo">
+                            <img src="./images/robot.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>Robot tự hành vận chuyển vật tư trong khu cách ly</b> là một cỗ máy đặc biệt là một lập trình bởi một máy tính 
+                                có khả năng thực hiện một loạt phức 
+                                tạp của các hành động tự động. Robot có thể được dẫn đường bằng thiết bị điều khiển bên ngoài(ray trượt, vít me) 
+                                hoặc điều khiển có thể được nhúng bên trong(động cơ, bánh xe, xích di chuyển…). Robot có thể được chế tạo để gợi 
+                                lên hình dáng con người , nhưng hầu hết các robot là những cỗ máy thực hiện nhiệm vụ, được thiết kế với trọng tâm 
+                                là chức năng rõ ràng, hơn là thẩm mỹ bên ngoài.
+                            <p>Xe tự hành AGV được sử dụng nhiều cho kho thông minh với các ứng dụng xuất nhập kho, vận chuyển hàng hóa, logistic 
+                                trong nhà xưởng. Giải pháp cho nhà kho thông minh giúp tiết kiệm thời gian, nhân công và dễ dàng kiểm soát hàng hóa. 
+                                Các robot AGV có thể ở dạng xe chui gầm, xe kéo trolley,..
+                            </p>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </main>
+            <!----------------END OF MAIN --------------->
+
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
+                    <div class="theme-toggler">
+                        <span class="material-icons-sharp active">light_mode</span>
+                        <span class="material-icons-sharp">dark_mode</span>
+                    </div>
+                    <div class="profile">
+                        <div class="info">
+                            <p>Hey, <b>Huu Dung</b></p>
+                            <small class="text-muted">Admin</small>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="./images/huudung.jpg">
+                        </div>
+                    </div>
+                </div>
+                <!------------END OF TOP----------------->
+                <div class="recent-updates">
+                    <h2>Recent Weather Updates</h2>
+                    <div class="updates">
+                        <div class="update">
+                            <div class="profile-photo">
+                                <img src="./images/weither.png">
+                            </div>
+                            <div class="message">
+                                <p><b>Hồ Chí Minh</b> nắng gắt 34°C</p>
+                                <small class="text-muted"> 2 Minuted ago</small>
+                            </div>
+                        </div>
+                        <div class="update">
+                            <div class="profile-photo">
+                                <img src="./images/weither_rain.jpg">
+                            </div>
+                            <div class="message">
+                                <p><b>Hồ Chí Minh</b> mưa rào 24°C</p>
+                                <small class="text-muted"> 2 Hour ago</small>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./orders.js"></script>
+        <script src="./index.js"></script>
+        <script type="text/javascript" src="./time.js"></script>
+    </body>
+</html>

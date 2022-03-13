@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Graduation Project</title>
+        <!-- MATERIAL CDN-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" 
+        rel="stylesheet">
+        <!--STYLESHEET-->
+        <link rel="stylesheet" href="./style.css">
+        <!--Javascript-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body onload="time()">
+        <div class="container">
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <img src="./images/logo.png">
+                        <h2>Mobile Robot <span class="danger">Isolation area</span></h2>
+                    </div>
+
+                    <div class="close" id="close-btn">
+                        <span class="material-icons-sharp">close</span>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <a href="./index.html"  class="active">
+                        <span class="material-icons-sharp">dashboard</span>
+                        <h3>Control</h3>
+                    </a>
+                    <a href="./Information.html">
+                        <span class="material-icons-sharp">perm_device_information</span>
+                        <h3>Informations</h3>
+                    </a>
+                    <a href="./Setting.html">
+                        <span class="material-icons-sharp">settings</span>
+                        <h3>Settings</h3>
+                    </a>
+                    <a href="./LogOut.html">
+                        <span class="material-icons-sharp">logout</span>
+                        <h3>Log Out</h3>
+                    </a>
+                </div>
+            </aside>
+
+<!---------------------------- END OF ASIDE ------------------------------>
+
+            <main>
+                <h1>Control</h1>
+
+                <div id="clock"></div>
+                <form action="" id="form" class ="auto" method="POST">
+                    <div class="insights">
+                    
+                        <div class="sales">
+                            <span class="material-icons-sharp">update</span>
+                            <div class="left">
+                                <h2>Chọn thời gian giao</h2>
+                                <h1><input type="time" name="times" class="times"></h1>
+                            </div>
+                        </div>
+<!-------------------------- END OF time ------------------------>
+                        <div class="expenses">
+                            <span class="material-icons-sharp">meeting_room</span>
+                            <div class="left">
+                                <h2>Chọn phòng cần giao</h2>
+                                <form>
+                                    <select id="rooms" name="rooms">
+                                    <option value="1">Phòng số 1</option>
+                                    <option value="2">Phòng số 2</option>
+                                    <option value="3">Phòng số 3</option>
+                                    <option value="4">Phòng số 4</option>
+                                    <option value="5">Phòng số 5</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+<!------------------------- END OF room ------------------------>
+                        <div class="income">
+                            <span class="material-icons-sharp">emoji_food_beverage</span>
+                            <div class="left">
+                                <h2>Chọn số phần cơm được giao</h2>
+                                <form>
+                                    <select id="foods" name="foods">
+                                    <option value="1">Giao 1 phần cơm</option>
+                                    <option value="2">Giao 2 phần cơm</option>
+                                    <option value="3">Giao 3 phần cơm</option>
+                                    <option value="4">Giao 4 phần cơm</option>
+                                    <option value="5">Giao 5 phần cơm</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+<!------------------------------------- END OF food ---------------------------->
+                    </div>
+                    <input type="submit" class="xacnhan" name ="xacnhan" value="Xác Nhận">
+                </form>
+<!---------------------------------------END OF INSIGHTS--------------------------->
+
+                <div class="recent-orders">
+                    <h2>Recent Orders</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Thời gian</th>
+                                <th>Số phòng</th>
+                                <th>Số người nhận</th>
+                                <th>Trạng thái</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="time[1]"></td>
+                                <td id="room[1]"></td>
+                                <td id="food[1]"></td>
+                                <td id="status[1]"></td>
+                              </tr>
+                              <tr>
+                                <td id="time[2]"></td>
+                                <td id="room[2]"></td>
+                                <td id="food[2]"></td>
+                                <td id="status[2]"></td>
+                              </tr> 
+                        </tbody>
+                    </table>
+                    <a href="#">Show All</a>
+                </div>
+            </main>
+<!------------------------------------------END OF MAIN --------------------------->
+
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
+                    <div class="theme-toggler">
+                        <span class="material-icons-sharp active">light_mode</span>
+                        <span class="material-icons-sharp">dark_mode</span>
+                    </div>
+                    <div class="profile">
+                        <div class="info">
+                            <p>Hey, <b>Huu Dung</b></p>
+                            <small class="text-muted">Admin</small>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="./images/huudung.jpg">
+                        </div>
+                    </div>
+                </div>
+<!----------------------------------END OF TOP-------------------------------->
+                <div class="recent-updates">
+                    <h2>Recent Weather Updates</h2>
+                    <div class="updates">
+                        <div class="update">
+                            <div class="profile-photo">
+                                <img src="./images/weither.png">
+                            </div>
+                            <div class="message">
+                                <p><b>Hồ Chí Minh</b> nắng gắt 34°C</p>
+                                <small class="text-muted"> 2 Minuted ago</small>
+                            </div>
+                        </div>
+                        <div class="update">
+                            <div class="profile-photo">
+                                <img src="./images/weither_rain.jpg">
+                            </div>
+                            <div class="message">
+                                <p><b>Hồ Chí Minh</b> mưa rào 24°C</p>
+                                <small class="text-muted"> 2 Hour ago</small>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./orders.js"></script>
+        <script src="./index.js"></script>
+        <script type="text/javascript" src="./time.js"></script>
+    </body>
+</html>
